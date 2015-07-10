@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent"   
+    android:layout_height="fill_parent" 
+    android:orientation="vertical" 
+    >       
+	<Button 
+   		android:layout_width="fill_parent"
+   		android:layout_height="wrap_content"
+   		android:text="线性布局"
+   		android:id="@+id/linear"/>
+	
+	<Button 
+   		android:layout_width="fill_parent"
+   		android:layout_height="wrap_content"
+   		android:text="相对布局"
+   		android:id="@+id/relative"/>
+	
+	<Button 
+   		android:layout_width="fill_parent"
+   		android:layout_height="wrap_content"
+   		android:text="帧布局"
+   		android:id="@+id/frame"/>
+	
+	<Button 
+   		android:layout_width="fill_parent"
+   		android:layout_height="wrap_content"
+   		android:text="表格布局"
+   		android:id="@+id/table"/>
+	
+
+</LinearLayout> 

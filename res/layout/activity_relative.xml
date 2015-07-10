@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent"   
+    android:layout_height="fill_parent" 
+    > 
+    <EditText 
+        android:id="@+id/re_edit_0" 
+        android:layout_width="wrap_content"   
+        android:layout_height="wrap_content" 
+        android:text="雨松MOMO" 
+        android:layout_alignParentRight="true" 
+    /> 
+
+    <TextView 
+        android:layout_width="wrap_content"   
+        android:layout_height="wrap_content" 
+        android:background="#FF0000" 
+        android:text="努力学习" 
+        android:textColor="#000000"    
+        android:textSize="18dip"    
+
+    /> 
+    <EditText 
+        android:id="@+id/re_edit_1" 
+        android:layout_width="wrap_content"   
+        android:layout_height="wrap_content" 
+        android:text="雨松MOMO" 
+        android:layout_alignParentBottom="true" 
+    /> 
+
+    <TextView 
+        android:layout_width="wrap_content"   
+        android:layout_height="wrap_content" 
+        android:background="#FF0000" 
+        android:text="努力工作" 
+        android:textColor="#000000"    
+        android:textSize="18dip"    
+
+        android:layout_above="@id/re_edit_1" 
+    /> 
+</RelativeLayout> 
