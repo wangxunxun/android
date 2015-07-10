@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent"   
+    android:layout_height="fill_parent" 
+    android:orientation="vertical" 
+    > 
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="email:59853844@qq.com"
+	    android:autoLink="email"
+	    android:height="50px"	    
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/textview1"
+	    android:text="带图片的textview"
+	    android:drawableTop="@drawable/share_weixin_icon"    
+	    />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/textview2"
+	    android:textColor="#0f0"
+	    android:textSize="20px"
+	    android:text="多行文本：在很久很久以前，有一位老人他带给我们一二苹果"
+	    android:width="300px"
+	    />
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/textview3"
+	    android:textColor="#f00"
+	    android:textSize="20px"
+	    android:text="单行文本：在很久很久以前，有一位老人他带给我们一二苹果"
+	    android:width="300px"
+	    android:singleLine="true"
+	    />
+	
+</LinearLayout>

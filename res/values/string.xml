@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="about_title">"title"</string>
+	<string name="about_text4">"text4"</string>
+	<string name="about_text5">"text5"</string>
+	<string name="action_settings">"settings"</string>
+	<string name="app_name">"testapp"</string>
+</resources>
