@@ -43,6 +43,11 @@
             android:name=".RelativeActivity"
             android:label="@string/app_name" >
         </activity>
+        
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/app_name" >
+        </activity>
     </application>
 
 </manifest>

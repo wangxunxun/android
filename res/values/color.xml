@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- 红色 -->
+	<color name="red">#FF0000</color>
+	<color name="about_text4and5">#898989</color>
+    <color name="transparent">#00000000</color>
+
+</resources>
