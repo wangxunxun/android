@@ -66,5 +66,70 @@ public class MainActivity extends Activity{
 			}
 		});
 
+		
+		Button button= (Button) findViewById(R.id.button);
+		button.setOnClickListener(new OnClickListener() {
+		
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(MainActivity.this,ButtonActivity.class);
+				startActivity(intent);
+			}
+		});
+		
+		
+		Button radiobutton= (Button) findViewById(R.id.radiobutton);
+		radiobutton.setOnClickListener(new OnClickListener() {
+		
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(MainActivity.this,RadiobuttonActivity.class);
+				startActivity(intent);
+			}
+		});
+		
+		Button checkbox= (Button) findViewById(R.id.checkbox);
+		checkbox.setOnClickListener(new OnClickListener() {
+		
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(MainActivity.this,CheckBoxActivity.class);
+				startActivity(intent);
+			}
+		});
+		Button imageview= (Button) findViewById(R.id.imageview);
+		imageview.setOnClickListener(new OnClickListener() {
+		
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(MainActivity.this,ImageViewActivity.class);
+				startActivity(intent);
+			}
+		});
+		
+		Button spinner= (Button) findViewById(R.id.spinner);
+		spinner.setOnClickListener(new OnClickListener() {
+		
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(MainActivity.this,SpinnerActivity.class);
+				startActivity(intent);
+			}
+		});
+		Button listview= (Button) findViewById(R.id.listview);
+		listview.setOnClickListener(new OnClickListener() {
+		
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(MainActivity.this,ListViewActivity.class);
+				startActivity(intent);
+			}
+		});
 	}
 }
