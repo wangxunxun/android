@@ -131,5 +131,46 @@ public class MainActivity extends Activity{
 				startActivity(intent);
 			}
 		});
+		Button gameshoes= (Button) findViewById(R.id.gameshoes);
+		gameshoes.setOnClickListener(new OnClickListener() {
+		
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(MainActivity.this,GameShoesActivity.class);
+				startActivity(intent);
+			}
+		});
+		Button dataandtimepicker= (Button) findViewById(R.id.dataandtimepicker);
+		dataandtimepicker.setOnClickListener(new OnClickListener() {
+		
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(MainActivity.this,DateAndTimePickerActivity.class);
+				startActivity(intent);
+			}
+		});
+		
+		Button chronometer= (Button) findViewById(R.id.chronometer);
+		chronometer.setOnClickListener(new OnClickListener() {
+		
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(MainActivity.this,ChronometerActivity.class);
+				startActivity(intent);
+			}
+		});
+		Button iconlist= (Button) findViewById(R.id.li1);
+		iconlist.setOnClickListener(new OnClickListener() {
+		
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(MainActivity.this,Li1Activity.class);
+				startActivity(intent);
+			}
+		});
 	}
 }
