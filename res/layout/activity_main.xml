@@ -17,12 +17,19 @@
 		   		android:text="关于"
 		   		android:id="@+id/about"/>
 			
+
+						
+	    </TableRow> 
+	    <TableRow 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="fill_parent" 
+	        android:padding="10dip"> 	
 			<Button 
 		   		android:layout_width="wrap_content"
 		   		android:layout_height="fill_parent"
 		   		android:text="layout"
-		   		android:id="@+id/layout"/>
-						
+		   		android:id="@+id/layout"/>	        	     	
+   	   		   	   			   		
 	    </TableRow> 
 	    <TableRow 
 	        android:layout_width="wrap_content" 
@@ -33,11 +40,18 @@
 		   		android:layout_height="fill_parent"
 		   		android:text="EditText"
 		   		android:id="@+id/edittext"/>	        	     	
+   	   		   	   			   		
+	    </TableRow> 
+	    <TableRow 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="fill_parent" 
+	        android:padding="10dip"> 
 	   	   	<Button 
 		   		android:layout_width="wrap_content"
 		   		android:layout_height="fill_parent"
 		   		android:text="Button"
-		   		android:id="@+id/button"/>	   	   		   	   			   		
+		   		android:id="@+id/button"/>	
+    			            
 	    </TableRow> 
 	    <TableRow 
 	        android:layout_width="wrap_content" 
@@ -48,12 +62,19 @@
 		   		android:layout_height="fill_parent"
 		   		android:text="CheckBox"
 		   		android:id="@+id/checkbox"/>
+    			            
+	    </TableRow> 
+	    <TableRow 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="fill_parent" 
+	        android:padding="10dip"> 
 	    	<Button 
 		   		android:layout_width="wrap_content"
 		   		android:layout_height="fill_parent"
 		   		android:text="ImageView"
-		   		android:id="@+id/imageview"/>	    			            
-	    </TableRow> 
+		   		android:id="@+id/imageview"/>	
+	            
+	    </TableRow>   
 	
 	    <TableRow 
 	        android:layout_width="wrap_content" 
@@ -64,12 +85,19 @@
 		   		android:layout_height="fill_parent"
 		   		android:text="ListView"
 		   		android:id="@+id/listview"/>
+	            
+	    </TableRow>        
+	    
+	    <TableRow 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="fill_parent" 
+	        android:padding="10dip"> 
 	        <Button 
 		   		android:layout_width="wrap_content"
 		   		android:layout_height="fill_parent"
-		   		android:text="Picker"
-		   		android:id="@+id/dataandtimepicker"/>		            
-	    </TableRow>             
+		   		android:text="Date/TimePicker"
+		   		android:id="@+id/dataandtimepicker"/>	            
+	    </TableRow> 
 	    <TableRow 
 	        android:layout_width="wrap_content" 
 	        android:layout_height="fill_parent" 
@@ -88,7 +116,7 @@
 	   	   	<Button 
 		   		android:layout_width="wrap_content"
 		   		android:layout_height="fill_parent"
-		   		android:text="radiobutton"
+		   		android:text="RadioButton"
 		   		android:id="@+id/radiobutton"/>
 	            
 	    </TableRow> 
@@ -116,7 +144,61 @@
 		   		android:id="@+id/chronometer"/>
 	            
 	    </TableRow> 
-	    
+	    <TableRow 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="fill_parent" 
+	        android:padding="10dip"> 
+	        <Button 
+		   		android:layout_width="wrap_content"
+		   		android:layout_height="fill_parent"
+		   		android:text="AutoCompleteTextView"
+		   		android:id="@+id/autocompletetextview"/>
+	            
+	    </TableRow> 
+	    <TableRow 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="fill_parent" 
+	        android:padding="10dip"> 
+	        <Button 
+		   		android:layout_width="wrap_content"
+		   		android:layout_height="fill_parent"
+		   		android:text="ProgressBar"
+		   		android:id="@+id/progressbar"/>
+	            
+	    </TableRow> 
+	    <TableRow 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="fill_parent" 
+	        android:padding="10dip"> 
+	        <Button 
+		   		android:layout_width="wrap_content"
+		   		android:layout_height="fill_parent"
+		   		android:text="SeekBar"
+		   		android:id="@+id/seekbar"/>
+	            
+	    </TableRow> 
+	    <TableRow 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="fill_parent" 
+	        android:padding="10dip"> 
+	        <Button 
+		   		android:layout_width="wrap_content"
+		   		android:layout_height="fill_parent"
+		   		android:text="RatingBar"
+		   		android:id="@+id/ratingbar"/>
+	            
+	    </TableRow> 
+	    <TableRow 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="fill_parent" 
+	        android:padding="10dip"> 
+	        <Button 
+		   		android:layout_width="wrap_content"
+		   		android:layout_height="fill_parent"
+		   		android:text="TabHost"
+		   		android:id="@+id/tabhost1"/>
+	            
+	    </TableRow> 
 	    <TableRow 
 	        android:layout_width="wrap_content" 
 	        android:layout_height="fill_parent" 

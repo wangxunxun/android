@@ -172,5 +172,57 @@ public class MainActivity extends Activity{
 				startActivity(intent);
 			}
 		});
+		
+		Button autocompletetextview= (Button) findViewById(R.id.autocompletetextview);
+		autocompletetextview.setOnClickListener(new OnClickListener() {
+		
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(MainActivity.this,AutoCompleteTextViewActivity.class);
+				startActivity(intent);
+			}
+		});
+		
+		Button progressbar= (Button) findViewById(R.id.progressbar);
+		progressbar.setOnClickListener(new OnClickListener() {
+		
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(MainActivity.this,ProgressBarActivity.class);
+				startActivity(intent);
+			}
+		});
+		Button seekbar= (Button) findViewById(R.id.seekbar);
+		seekbar.setOnClickListener(new OnClickListener() {
+		
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(MainActivity.this,SeekBarActivity.class);
+				startActivity(intent);
+			}
+		});
+		Button ratingbar= (Button) findViewById(R.id.ratingbar);
+		ratingbar.setOnClickListener(new OnClickListener() {
+		
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(MainActivity.this,RatingBarActivity.class);
+				startActivity(intent);
+			}
+		});
+		Button tabhost= (Button) findViewById(R.id.tabhost1);
+		tabhost.setOnClickListener(new OnClickListener() {
+		
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(MainActivity.this,TabHostActivity.class);
+				startActivity(intent);
+			}
+		});
 	}
 }

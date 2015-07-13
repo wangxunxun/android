@@ -103,6 +103,27 @@
             android:label="@string/app_name" >
         </activity>
 
+        <activity
+            android:name=".AutoCompleteTextViewActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ProgressBarActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name=".SeekBarActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".RatingBarActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".TabHostActivity"
+            android:label="@string/app_name" >
+        </activity>
     </application>
 
 </manifest>
