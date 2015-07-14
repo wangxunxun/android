@@ -224,5 +224,45 @@ public class MainActivity extends Activity{
 				startActivity(intent);
 			}
 		});
+		Button imageswitcher= (Button) findViewById(R.id.imageswitcher);
+		imageswitcher.setOnClickListener(new OnClickListener() {
+		
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(MainActivity.this,ImageSwitcherActivity.class);
+				startActivity(intent);
+			}
+		});
+		Button gridview= (Button) findViewById(R.id.gridview);
+		gridview.setOnClickListener(new OnClickListener() {
+		
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(MainActivity.this,GridViewtActivity.class);
+				startActivity(intent);
+			}
+		});
+		Button gallery= (Button) findViewById(R.id.gallery);
+		gallery.setOnClickListener(new OnClickListener() {
+		
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(MainActivity.this,GalleryActivity.class);
+				startActivity(intent);
+			}
+		});
+		Button lihuandengpian= (Button) findViewById(R.id.lihuandengpian);
+		lihuandengpian.setOnClickListener(new OnClickListener() {
+		
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(MainActivity.this,LiHuanDengPianActivity.class);
+				startActivity(intent);
+			}
+		});
 	}
 }

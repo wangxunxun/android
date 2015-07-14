@@ -124,6 +124,24 @@
             android:name=".TabHostActivity"
             android:label="@string/app_name" >
         </activity>
+        
+        <activity
+            android:name=".ImageSwitcherActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".GridViewtActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name=".GalleryActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".LiHuanDengPianActivity"
+            android:label="@string/app_name" >
+        </activity>
     </application>
 
 </manifest>

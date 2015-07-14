@@ -199,6 +199,41 @@
 		   		android:id="@+id/tabhost1"/>
 	            
 	    </TableRow> 
+	    
+	    <TableRow 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="fill_parent" 
+	        android:padding="10dip"> 
+	        <Button 
+		   		android:layout_width="wrap_content"
+		   		android:layout_height="fill_parent"
+		   		android:text="ImageSwitcher"
+		   		android:id="@+id/imageswitcher"/>
+	            
+	    </TableRow> 
+	    
+	    <TableRow 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="fill_parent" 
+	        android:padding="10dip"> 
+	        <Button 
+		   		android:layout_width="wrap_content"
+		   		android:layout_height="fill_parent"
+		   		android:text="GridView"
+		   		android:id="@+id/gridview"/>
+	            
+	    </TableRow> 
+	    <TableRow 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="fill_parent" 
+	        android:padding="10dip"> 
+	        <Button 
+		   		android:layout_width="wrap_content"
+		   		android:layout_height="fill_parent"
+		   		android:text="Gallery"
+		   		android:id="@+id/gallery"/>
+	            
+	    </TableRow> 
 	    <TableRow 
 	        android:layout_width="wrap_content" 
 	        android:layout_height="fill_parent" 
@@ -219,6 +254,17 @@
 		   		android:layout_height="fill_parent"
 		   		android:text="li1"
 		   		android:id="@+id/li1"/>
+	            
+	    </TableRow> 
+	    <TableRow 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="fill_parent" 
+	        android:padding="10dip"> 
+	        <Button 
+		   		android:layout_width="wrap_content"
+		   		android:layout_height="fill_parent"
+		   		android:text="lihuandengpian"
+		   		android:id="@+id/lihuandengpian"/>
 	            
 	    </TableRow> 
 	</TableLayout> 
