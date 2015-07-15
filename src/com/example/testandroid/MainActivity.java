@@ -264,5 +264,25 @@ public class MainActivity extends Activity{
 				startActivity(intent);
 			}
 		});
+		Button toast= (Button) findViewById(R.id.toast);
+		toast.setOnClickListener(new OnClickListener() {
+		
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(MainActivity.this,ToastActivity.class);
+				startActivity(intent);
+			}
+		});
+		Button notification= (Button) findViewById(R.id.notification);
+		notification.setOnClickListener(new OnClickListener() {
+		
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(MainActivity.this,NotificationActivity.class);
+				startActivity(intent);
+			}
+		});
 	}
 }
