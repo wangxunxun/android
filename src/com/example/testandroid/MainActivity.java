@@ -284,5 +284,25 @@ public class MainActivity extends Activity{
 				startActivity(intent);
 			}
 		});
+		Button alertdialog= (Button) findViewById(R.id.alertdialog);
+		alertdialog.setOnClickListener(new OnClickListener() {
+		
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(MainActivity.this,AlertDialogActivity.class);
+				startActivity(intent);
+			}
+		});
+		Button login= (Button) findViewById(R.id.login);
+		login.setOnClickListener(new OnClickListener() {
+		
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(MainActivity.this,LoginActivity.class);
+				startActivity(intent);
+			}
+		});
 	}
 }

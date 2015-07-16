@@ -263,6 +263,17 @@
 	        <Button 
 		   		android:layout_width="wrap_content"
 		   		android:layout_height="fill_parent"
+		   		android:text="AlertDialog"
+		   		android:id="@+id/alertdialog"/>
+	            
+	    </TableRow> 
+	    <TableRow 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="fill_parent" 
+	        android:padding="10dip"> 
+	        <Button 
+		   		android:layout_width="wrap_content"
+		   		android:layout_height="fill_parent"
 		   		android:text="GameShoes"
 		   		android:id="@+id/gameshoes"/>
 	            
@@ -287,6 +298,17 @@
 		   		android:layout_height="fill_parent"
 		   		android:text="lihuandengpian"
 		   		android:id="@+id/lihuandengpian"/>
+	            
+	    </TableRow> 
+	    <TableRow 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="fill_parent" 
+	        android:padding="10dip"> 
+	        <Button 
+		   		android:layout_width="wrap_content"
+		   		android:layout_height="fill_parent"
+		   		android:text="login"
+		   		android:id="@+id/login"/>
 	            
 	    </TableRow> 
 	</TableLayout> 
