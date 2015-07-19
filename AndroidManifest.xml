@@ -170,6 +170,60 @@
             android:name=".RegisterActivity"
             android:label="@string/app_name" >
    		 </activity>
-    </application>
+   		 <activity 
+		    android:label="显示结果"
+		    android:name=".Result55Activity">
+		</activity>
+		<activity 
+		    android:label="@string/app_name"
+		    android:name=".Main55Activity">
+		</activity>
+		<activity 
+		    android:label="@string/app_name"
+		    android:name=".Main56Activity">
+		</activity>
+		<activity 
+		    android:label="@string/app_name"
+		    android:name=".Head56Activity">
+		</activity>
+		<activity 
+		    android:label="@string/app_name"
+		    android:name=".Main58Activity">
+		</activity>
+		<activity 
+		    android:label="@string/app_name"
+		    android:name=".Login58Activity">
+		</activity>
+		<activity 
+		    android:label="@string/app_name"
+		    android:name=".Main59Activity">
+		</activity>
+		<activity 
+		    android:label="@string/app_name"
+		    android:name=".Big59Activity">
+		</activity>
+        <activity android:name=".First63Activity" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Second63Activity" >
+            <intent-filter >
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+		<activity 
+		    android:label="@string/app_name"
+		    android:name=".TupianliulanActivity">
+		</activity>
+		<activity 
+		    android:label="@string/app_name"
+		    android:name=".Tupianliulan2Activity">
+		</activity>
+    </application>
+ 
 </manifest>

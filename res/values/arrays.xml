@@ -16,4 +16,10 @@
     	<item>通话设置</item>
     	<item>连接功能</item>
     </string-array>
+    <string-array name="option58">
+    	<item>在线好友</item>
+    	<item>我的好友</item>
+    	<item>陌生人</item>
+    	<item>黑名单</item>
+    </string-array>
 </resources>

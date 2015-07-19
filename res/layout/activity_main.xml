@@ -311,5 +311,82 @@
 		   		android:id="@+id/login"/>
 	            
 	    </TableRow> 
+	    <TableRow 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="fill_parent" 
+	        android:padding="10dip"> 
+	        <Button 
+		   		android:layout_width="wrap_content"
+		   		android:layout_height="fill_parent"
+		   		android:text="根据身高计算体重55"
+		   		android:id="@+id/main55"/>
+	            
+	    </TableRow> 
+	    <TableRow 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="fill_parent" 
+	        android:padding="10dip"> 
+	        <Button 
+		   		android:layout_width="wrap_content"
+		   		android:layout_height="fill_parent"
+		   		android:text="选择头像56"
+		   		android:id="@+id/main56"/>
+	            
+	    </TableRow> 
+	    <TableRow 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="fill_parent" 
+	        android:padding="10dip"> 
+	        <Button 
+		   		android:layout_width="wrap_content"
+		   		android:layout_height="fill_parent"
+		   		android:text="仿QQ登录界面"
+		   		android:id="@+id/main58"/>
+	            
+	    </TableRow> 
+	    <TableRow 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="fill_parent" 
+	        android:padding="10dip"> 
+	        <Button 
+		   		android:layout_width="wrap_content"
+		   		android:layout_height="fill_parent"
+		   		android:text="查看原图图片浏览器"
+		   		android:id="@+id/main59"/>
+	            
+	    </TableRow> 
+	    <TableRow 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="fill_parent" 
+	        android:padding="10dip"> 
+	        <Button 
+		   		android:layout_width="wrap_content"
+		   		android:layout_height="fill_parent"
+		   		android:text="隐式Intent"
+		   		android:id="@+id/main63"/>
+	            
+	    </TableRow> 
+	    <TableRow 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="fill_parent" 
+	        android:padding="10dip"> 
+	        <Button 
+		   		android:layout_width="wrap_content"
+		   		android:layout_height="fill_parent"
+		   		android:text="图片浏览"
+		   		android:id="@+id/tupian"/>
+	            
+	    </TableRow> 
+	    <TableRow 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="fill_parent" 
+	        android:padding="10dip"> 
+	        <Button 
+		   		android:layout_width="wrap_content"
+		   		android:layout_height="fill_parent"
+		   		android:text="图片浏览2"
+		   		android:id="@+id/tupian2"/>
+	            
+	    </TableRow> 
 	</TableLayout> 
 </ScrollView>

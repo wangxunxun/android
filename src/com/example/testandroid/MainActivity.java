@@ -304,5 +304,75 @@ public class MainActivity extends Activity{
 				startActivity(intent);
 			}
 		});
+		Button main55= (Button) findViewById(R.id.main55);
+		main55.setOnClickListener(new OnClickListener() {
+		
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(MainActivity.this,Main55Activity.class);
+				startActivity(intent);
+			}
+		});
+		Button main56= (Button) findViewById(R.id.main56);
+		main56.setOnClickListener(new OnClickListener() {
+		
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(MainActivity.this,Main56Activity.class);
+				startActivity(intent);
+			}
+		});
+		Button main58= (Button) findViewById(R.id.main58);
+		main58.setOnClickListener(new OnClickListener() {
+		
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(MainActivity.this,Login58Activity.class);
+				startActivity(intent);
+			}
+		});
+		Button main59= (Button) findViewById(R.id.main59);
+		main59.setOnClickListener(new OnClickListener() {
+		
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(MainActivity.this,Main59Activity.class);
+				startActivity(intent);
+			}
+		});
+		Button main63= (Button) findViewById(R.id.main63);
+		main63.setOnClickListener(new OnClickListener() {
+		
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(MainActivity.this,First63Activity.class);
+				startActivity(intent);
+			}
+		});
+		Button tupian= (Button) findViewById(R.id.tupian);
+		tupian.setOnClickListener(new OnClickListener() {
+		
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(MainActivity.this,TupianliulanActivity.class);
+				startActivity(intent);
+			}
+		});
+		Button tupian2= (Button) findViewById(R.id.tupian2);
+		tupian2.setOnClickListener(new OnClickListener() {
+		
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(MainActivity.this,Tupianliulan2Activity.class);
+				startActivity(intent);
+			}
+		});
 	}
 }
