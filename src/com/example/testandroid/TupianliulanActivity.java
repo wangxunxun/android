@@ -5,7 +5,9 @@ import com.example.testandroid.R.id;
 import android.R.string;
 import android.app.Activity;  
 import android.content.Intent;
+import android.graphics.PointF;
 import android.os.Bundle;  
+import android.util.FloatMath;
 import android.util.Log;
 import android.view.MotionEvent;  
 import android.view.View;  
@@ -38,6 +40,7 @@ public class TupianliulanActivity extends Activity implements ViewFactory, OnTou
     /** 
      * 装载点点的容器 
      */  
+    private float oldDist; 
     private LinearLayout linearLayout;  
     /** 
      * 点点数组 
@@ -131,13 +134,18 @@ public class TupianliulanActivity extends Activity implements ViewFactory, OnTou
     public View makeView() {  
         final ImageView i = new ImageView(this);  
         i.setBackgroundColor(0xff000000);  
-        i.setScaleType(ImageView.ScaleType.CENTER_CROP);  
-        i.setLayoutParams(new ImageSwitcher.LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT));  
+        i.setScaleType(ImageView.ScaleType.FIT_CENTER);  
+        i.setLayoutParams(new ImageSwitcher.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));  
         return i ;  
     } 
     @Override  
     public boolean onTouch(View v, MotionEvent event) {  
-        switch (event.getAction()) {  
+    	int nCnt = event.getPointerCount(); 
+    	System.out.println(nCnt);
+
+    	if(nCnt==1){
+    	
+        switch (event.getAction()& MotionEvent.ACTION_MASK) {  
         case MotionEvent.ACTION_DOWN:{  
             //手指按下的X坐标  
             downX = event.getX();  
@@ -147,7 +155,7 @@ public class TupianliulanActivity extends Activity implements ViewFactory, OnTou
             float lastX = event.getX();  
             //抬起的时候的X坐标大于按下的时候就显示上一张图片  
             
-            if(lastX > downX+30){  
+            if(lastX > downX+80){  
                 if(currentPosition > 0){  
                     //设置动画，这里的动画比较简单，不明白的去网上看看相关内容  
                     mImageSwitcher.setInAnimation(AnimationUtils.loadAnimation(getApplication(), R.anim.left_in));  
@@ -160,7 +168,7 @@ public class TupianliulanActivity extends Activity implements ViewFactory, OnTou
                 }  
             }   
               
-            else if(lastX < downX-30){  
+            else if(lastX < downX-80){  
                 if(currentPosition < imageId.length - 1){  
                     mImageSwitcher.setInAnimation(AnimationUtils.loadAnimation(getApplication(), R.anim.right_in));  
                     mImageSwitcher.setOutAnimation(AnimationUtils.loadAnimation(getApplication(), R.anim.lift_out));  
@@ -180,14 +188,51 @@ public class TupianliulanActivity extends Activity implements ViewFactory, OnTou
             		relativeLayout.setVisibility(View.VISIBLE); 
             	}
             }
+            break; 
             }  
+        
+
               
-            break;  
+             
         }  
-  
+    	}
+    	else if(nCnt>=2){
+    		switch (event.getAction()& MotionEvent.ACTION_MASK) {
+    		
+	        case MotionEvent.ACTION_POINTER_DOWN:{
+	            oldDist = spacing(event);
+	            break;
+	            }
+	        
+	        case MotionEvent.ACTION_POINTER_UP:{
+	        	float newDist = spacing(event);
+	        	if(newDist>oldDist){
+	        		Toast.makeText(getApplicationContext(), "放大", 3000).show();
+	        	}
+	        	else{
+	        		Toast.makeText(getApplicationContext(), "缩小", 3000).show();
+	        	}
+	        	break; 	
+	        }
+	         
+		}
+    	}
         return true;  
     }  
 
+    private float spacing(MotionEvent event) {
+        float x = event.getX(0) - event.getX(1);
+        float y = event.getY(0) - event.getY(1);
+        System.out.println(FloatMath.sqrt(x * x + y * y));
+        return FloatMath.sqrt(x * x + y * y);
+    }
+    
+    private void midPoint(PointF point, MotionEvent event) {
+        float x = event.getX(0) + event.getX(1);
+        float y = event.getY(0) + event.getY(1);
+        point.set(x/2, y/2);
+    }
+    
     private class  onClickListener implements OnClickListener{  
 
 		@Override
